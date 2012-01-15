@@ -126,9 +126,7 @@ class ConsoleLogger(object):
 
         #erase the previous line
         if self.lineLength > 0:
-            sys.stdout.write('\b \b' * self.lineLength)
-            sys.stdout.write(' ' * self.lineLength)
-            sys.stdout.write('\b \b' * self.lineLength)
+            sys.stdout.write('\n')
 
         #print the line
         sys.stdout.write(message)
